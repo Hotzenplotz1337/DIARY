@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="18cae030-1030-4970-a082-992e7ee8cac2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.metadata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1026627.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1137659.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1172688.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1221004.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1274164.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1282255.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1287695.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1325549.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1360264.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1362458.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1368195.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1379351.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1381427.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1389135.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1392155.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1404701.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1420254.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1433508.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1436795.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1483525.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1534675.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1547079.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1620234.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1636677.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1664019.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1715675.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1717580.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1736823.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1818919.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1824943.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1841804.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1864877.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1893309.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1913444.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1928569.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1929094.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1934463.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/1943822.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2003453.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2036918.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2046468.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2051258.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2065219.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2090124.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2134409.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2161033.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2161517.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2249958.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2287166.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2325850.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2337169.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2362976.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2417669.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2425920.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2428196.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2445069.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2463761.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2484552.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2494865.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2544481.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2597924.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2614352.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2654519.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2655648.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2666980.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2701268.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2703046.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2714122.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2741083.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2787353.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2800683.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2814737.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2877131.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2891043.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2939231.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2946953.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/2968928.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3013879.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3017266.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3017952.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3034836.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3044360.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3084815.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3161194.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3198002.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3227731.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3278036.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3305304.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3318612.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3324603.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3349985.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3440475.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3454719.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3500620.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3534199.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3535784.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3541678.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3579582.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3607157.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3627573.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3636115.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3638864.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3640153.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3654378.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3656476.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3686829.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3695181.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3706085.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3717977.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3733343.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3733781.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3748809.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3834608.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3888652.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3893454.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3893757.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3900475.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3922412.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3946820.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3988227.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/3998218.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4002674.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4006608.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4012086.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4021620.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4022501.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4121574.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4125008.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4132111.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4171243.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4173993.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4175403.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4213137.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4238605.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4259617.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4282204.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4308124.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4324566.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4327894.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4377463.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4390510.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4407216.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4445521.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4493285.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4517850.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4520837.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4545707.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4548378.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4551507.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4583277.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4594357.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4594878.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4648586.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4656678.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4669441.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4767416.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4801282.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4827146.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4880015.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4890259.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4931443.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/4998621.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5006490.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5022167.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5047719.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5050483.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5080433.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5092477.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5152057.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5237578.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5270050.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5301554.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5327357.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5398272.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5406553.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5513202.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5521258.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5528433.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5585025.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5635389.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5648902.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5651019.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5661860.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5663425.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5698065.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5783286.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5786683.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5807613.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5831404.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5875623.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5882490.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5889170.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5902195.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5946340.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5956701.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/5988322.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6002818.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6008510.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6074089.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6100815.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6126289.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6156494.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6222308.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6223443.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6233631.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6247016.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6288488.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6309280.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6345148.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6355640.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6356406.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6365434.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6405055.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6422406.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6511611.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6526645.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6573336.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6601929.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6606653.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6652728.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6689246.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6692050.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6698883.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6707998.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6775839.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6827022.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6859815.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6917859.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6941501.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6947016.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6974211.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/6991515.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7036889.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7060008.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7088697.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7103204.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7128728.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7138551.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7146228.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7155595.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7194281.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7213733.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7224894.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7233441.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7244951.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7299098.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7353998.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7390934.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7428897.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7448101.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7459478.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7560013.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7580525.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7593999.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7603046.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7619030.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7619074.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7743810.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7830949.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7841463.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7883896.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7884014.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7904486.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7926874.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7934985.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7935780.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7962808.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/7999013.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8016779.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8037210.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8048504.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8058719.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8066228.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8124770.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8181241.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8185009.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8206539.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8208340.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8217241.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8224202.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8233359.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8263604.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8309934.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8318641.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8339672.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8370555.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8396029.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8397299.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8438567.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8466544.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8505300.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8511564.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8533853.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8540688.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8542464.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8559387.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8574407.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8583660.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8606906.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8613897.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8751706.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8756925.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8782081.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8788169.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8788770.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8796756.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8856953.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8923470.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8981738.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/8994651.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9018271.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9033648.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9036837.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9057845.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9064290.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9129033.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9152595.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9162462.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9212461.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9225542.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9227197.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9254124.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9309763.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9311383.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9328023.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9336473.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9357192.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9394322.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9411802.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9433468.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9457015.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9527409.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9548672.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9599996.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9722637.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9722895.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9806837.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9825182.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9829645.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9852292.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9869239.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9875850.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9950929.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9974981.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9977626.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tmp.drivedownload/9997302.driveupload" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/PlayfairDisplay-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/PlayfairDisplay-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/RobotoSlab-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/helper/db_food.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/helper/db_food.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/helper/db_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/helper/db_helper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/diary_entry.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/diary_entry.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/food_entry.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/food_entry.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/entrys.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/entrys.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/foods.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/foods.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/add_entry_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add_entry_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/add_food_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/add_food_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/entry_list_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/entry_list_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/food_list_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/food_list_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/home_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/app_drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/app_drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/image_input.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/image_input.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/widget_test.dart" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.dart_tool/" />
+    <ignored path="$PROJECT_DIR$/.idea/" />
+    <ignored path="$PROJECT_DIR$/.pub/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29_x86" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/main.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/locator.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/lifecycle_manager.dart">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/screens/settings_screen.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7021">
+              <caret line="421" column="28" selection-start-line="421" selection-start-column="8" selection-end-line="421" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/screens/food_list_screen.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2754">
+              <caret line="170" column="53" selection-start-line="170" selection-start-column="53" selection-end-line="170" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/widgets/chart.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1105">
+              <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/screens/entry_list_screen.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1462">
+              <caret line="96" column="12" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/screens/home_screen.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1802">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lib/screens/entry_list_screen.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/settings_screen.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/home_screen.dart" />
+        <option value="$PROJECT_DIR$/lib/screens/food_list_screen.dart" />
+        <option value="$PROJECT_DIR$/lib/widgets/chart.dart" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="diary_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diary_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diary_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diary_test" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diary_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diary_test" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diary_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diary_test" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diary_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diary_test" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diary_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diary_test" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diary_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diary_test" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="diary_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="diary_test" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="widgets" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Variables" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18cae030-1030-4970-a082-992e7ee8cac2" name="Default Changelist" comment="" />
+      <created>1571227994687</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571227994687</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48034516" visible="true" weight="0.15351813" />
+      <window_info id="Captures" order="1" sideWeight="0.5158197" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="2" sideWeight="0.5158197" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Build Variants" order="5" sideWeight="0.51965487" side_tool="true" visible="true" weight="0.15351813" />
+      <window_info id="Resources Explorer" order="6" sideWeight="0.49856183" weight="0.32942432" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32981783" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.32981783" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32981783" />
+      <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Logcat" order="4" weight="0.32981783" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.48801535" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.32981783" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32981783" />
+      <window_info anchor="bottom" id="Find" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32981783" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Flutter Inspector" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Flutter Outline" order="4" visible="true" weight="0.3075693" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Assistant" order="6" weight="0.32995737" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Untitled-1.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/lifecycle_manager.dart">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/settings_screen.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7021">
+          <caret line="421" column="28" selection-start-line="421" selection-start-column="8" selection-end-line="421" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/food_list_screen.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="170" column="53" selection-start-line="170" selection-start-column="53" selection-end-line="170" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/widgets/chart.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/entry_list_screen.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="96" column="12" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screens/home_screen.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/locator.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>diary_test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Dart Packages</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
