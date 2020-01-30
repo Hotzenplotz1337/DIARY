@@ -46,8 +46,6 @@ class _EditFoodScreenState extends State<EditFoodScreen> {
     super.didChangeDependencies();
   }
 
-  // final _formKey = GlobalKey<FormState>();
-
   void _saveFood() {
     if (_nController.text.isEmpty) {
       _validate = false;
