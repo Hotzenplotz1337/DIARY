@@ -222,7 +222,7 @@ class _EditFoodScreenState extends State<EditFoodScreen> {
                         'Vegetables',
                         'Legumes & Nuts'
                             'Grain(products) & Rice',
-                        'Bread & Buiscuits',
+                        'Bread & Biscuits',
                         'Sweets',
                         'Fish & Meat',
                         'Milk(products) & Eggs',

@@ -206,7 +206,7 @@ class _NewFoodScreenState extends State<NewFoodScreen> {
                         'Vegetables',
                         'Legumes & Nuts'
                             'Grain(products) & Rice',
-                        'Bread & Buiscuits',
+                        'Bread & Biscuits',
                         'Sweets',
                         'Fish & Meat',
                         'Milk(products) & Eggs',
