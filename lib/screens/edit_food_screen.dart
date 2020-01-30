@@ -146,7 +146,43 @@ class _EditFoodScreenState extends State<EditFoodScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                ImageInput(_selectImage),
+                _image == null
+                    ? ImageInput(_selectImage)
+                    : Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: <Widget>[
+                            Image.file(
+                              _image,
+                              fit: BoxFit.cover,
+                              height: 240,
+                              width: 180,
+                            ),
+                            RaisedButton.icon(
+                              icon: Icon(
+                                FontAwesomeIcons.trash,
+                                color: Colors.white,
+                              ),
+                              shape: new RoundedRectangleBorder(
+                                  borderRadius:
+                                      new BorderRadius.circular(10.0)),
+                              color: Colors.blueGrey[700],
+                              label: Text('Delete Picture',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  )),
+                              onPressed: () {
+                                setState(() {
+                                  _image = null;
+                                });
+                              },
+                            )
+                          ],
+                        )),
+                      ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(

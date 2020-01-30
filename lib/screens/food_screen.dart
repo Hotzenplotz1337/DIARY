@@ -291,7 +291,7 @@ class _FoodScreenState extends State<FoodScreen> {
                                                           null
                                                       ? Text('Category: -',
                                                           style: TextStyle(
-                                                            fontSize: 12,
+                                                            fontSize: 16,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                             color: Colors.white,
@@ -299,7 +299,7 @@ class _FoodScreenState extends State<FoodScreen> {
                                                       : Text(
                                                           'Category: ${foodEntrys.foods[index].category}',
                                                           style: TextStyle(
-                                                            fontSize: 12,
+                                                            fontSize: 16,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                             color: Colors.white,
