@@ -60,14 +60,14 @@ class _VerticalBarLabelChartState extends State<VerticalBarLabelChart> {
             )
           : Consumer<Entrys>(
               child: Center(
-                child: Text(
-                  'Got no entrys yet,\nstart adding some.',
-                  style: TextStyle(
-                    fontFamily: 'SourceSansPro',
-                    fontSize: 20,
-                    color: Colors.white,
-                  ),
-                ),
+                // child: Text(
+                //   'Got no entrys yet,\nstart adding some.',
+                //   style: TextStyle(
+                //     fontFamily: 'SourceSansPro',
+                //     fontSize: 20,
+                //     color: Colors.white,
+                //   ),
+                // ),
               ),
               builder: (ctx, diaryEntrys, ch) => diaryEntrys.entrys.length <= 0
                   ? ch

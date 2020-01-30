@@ -230,7 +230,7 @@ class _FoodScreenState extends State<FoodScreen> {
                                                       Text(
                                                         '${foodEntrys.foods[index].carbohydrates}g',
                                                         style: TextStyle(
-                                                          fontSize: 12,
+                                                          fontSize: 16,
                                                           fontWeight:
                                                               FontWeight.w300,
                                                           color: Colors.white,
@@ -239,7 +239,7 @@ class _FoodScreenState extends State<FoodScreen> {
                                                       Text(
                                                         '${(foodEntrys.foods[index].carbohydrates / 12).toStringAsFixed(1)} BE',
                                                         style: TextStyle(
-                                                          fontSize: 12,
+                                                          fontSize: 16,
                                                           fontWeight:
                                                               FontWeight.w300,
                                                           color: Colors.white,
@@ -248,7 +248,7 @@ class _FoodScreenState extends State<FoodScreen> {
                                                       Text(
                                                         '${(foodEntrys.foods[index].carbohydrates / 10).toStringAsFixed(1)} KE',
                                                         style: TextStyle(
-                                                          fontSize: 12,
+                                                          fontSize: 16,
                                                           fontWeight:
                                                               FontWeight.w300,
                                                           color: Colors.white,
@@ -310,7 +310,7 @@ class _FoodScreenState extends State<FoodScreen> {
                                                           ''
                                                       ? Text('Description: -',
                                                           style: TextStyle(
-                                                            fontSize: 12,
+                                                            fontSize: 16,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                             color: Colors.white,
@@ -318,7 +318,7 @@ class _FoodScreenState extends State<FoodScreen> {
                                                       : Text(
                                                           'Description: ${foodEntrys.foods[index].description}',
                                                           style: TextStyle(
-                                                            fontSize: 12,
+                                                            fontSize: 16,
                                                             fontWeight:
                                                                 FontWeight.w300,
                                                             color: Colors.white,
