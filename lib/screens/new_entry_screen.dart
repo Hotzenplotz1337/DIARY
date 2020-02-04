@@ -19,7 +19,6 @@ final _nController = TextEditingController();
 class NewEntryScreen extends StatefulWidget {
   NewEntryScreen({
     Key key,
-
   }) : super(key: key); //this.state
   static const routeName = '/add-entry-screen';
   @override
@@ -410,7 +409,8 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
                           ),
                           decoration: InputDecoration(
                             focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10.0)),
                               borderSide: BorderSide(color: Colors.white70),
                             ),
                             enabledBorder: OutlineInputBorder(
@@ -898,20 +898,31 @@ class _ValueState extends State<Value> {
         context: context,
         builder: (context) =>
             AlertDialog(
-              title: Text('Are you sure'),
+              backgroundColor: Colors.blueGrey[900],
+              title: Text(
+                'Are you sure',
+                style: TextStyle(color: Colors.white70),
+              ),
               content:
-                  Text('Do you want to disconnect the device and go back?'),
+                  Text('Do you want to disconnect the device and go back?',
+                    style: TextStyle(color: Colors.white70),),
               actions: <Widget>[
                 FlatButton(
+                  color: Colors.blueGrey[700],
                   onPressed: () => Navigator.of(context).pop(false),
-                  child: Text('No'),
+                  child: Text('No',
+                    style: TextStyle(color: Colors.white70),),
                 ),
                 FlatButton(
+                  color: Colors.blueGrey[700],
                   onPressed: () {
                     disconnectFromDevice();
                     Navigator.of(context).pop(true);
                   },
-                  child: Text('Yes'),
+                  child: Text(
+                    'Yes',
+                    style: TextStyle(color: Colors.white70),
+                  ),
                 ),
               ],
             ) ??
@@ -950,7 +961,7 @@ class _ValueState extends State<Value> {
                   color: Colors.blueGrey[700],
                   child: Center(
                     child: Text(
-                      'Waiting for last value .. ',
+                      'Waiting for Connection ...',
                       style: TextStyle(
                         color: Colors.white70,
                         fontSize: 24,
@@ -995,7 +1006,7 @@ class _ValueState extends State<Value> {
                                         MainAxisAlignment.spaceBetween,
                                     children: <Widget>[
                                       Text(
-                                        'Last measured \nBlood Sugar Level\nis\n',
+                                        'Last measured \nBlood Sugar Level',
                                         style: TextStyle(
                                           color: Colors.white70,
                                           fontSize: 18,

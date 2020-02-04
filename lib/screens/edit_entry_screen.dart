@@ -1,8 +1,6 @@
 import 'dart:async';
 import 'dart:convert' show utf8;
 
-//test
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
@@ -931,20 +929,31 @@ class _ValueState extends State<Value> {
         context: context,
         builder: (context) =>
             AlertDialog(
-              title: Text('Are you sure'),
+              backgroundColor: Colors.blueGrey[900],
+              title: Text(
+                'Are you sure',
+                style: TextStyle(color: Colors.white70),
+              ),
               content:
-                  Text('Do you want to disconnect the device and go back?'),
+                  Text('Do you want to disconnect the device and go back?',
+                    style: TextStyle(color: Colors.white70),),
               actions: <Widget>[
                 FlatButton(
+                  color: Colors.blueGrey[700],
                   onPressed: () => Navigator.of(context).pop(false),
-                  child: Text('No'),
+                  child: Text('No',
+                    style: TextStyle(color: Colors.white70),),
                 ),
                 FlatButton(
+                  color: Colors.blueGrey[700],
                   onPressed: () {
                     disconnectFromDevice();
                     Navigator.of(context).pop(true);
                   },
-                  child: Text('Yes'),
+                  child: Text(
+                    'Yes',
+                    style: TextStyle(color: Colors.white70),
+                  ),
                 ),
               ],
             ) ??
@@ -983,7 +992,7 @@ class _ValueState extends State<Value> {
                   color: Colors.blueGrey[700],
                   child: Center(
                     child: Text(
-                      'Waiting for last value .. ',
+                      'Waiting for Connection ...',
                       style: TextStyle(
                         color: Colors.white70,
                         fontSize: 24,
@@ -1028,7 +1037,7 @@ class _ValueState extends State<Value> {
                                         MainAxisAlignment.spaceBetween,
                                     children: <Widget>[
                                       Text(
-                                        'Last measured \nBlood Sugar Level\nis\n',
+                                        'Last measured \nBlood Sugar Level',
                                         style: TextStyle(
                                           color: Colors.white70,
                                           fontSize: 18,
