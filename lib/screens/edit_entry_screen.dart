@@ -258,7 +258,9 @@ class _EditEntryScreenState extends State<EditEntryScreen> {
       int _unitsCalculated =
           ((((value - 100) ~/ settings.relation) * factor).toInt());
       _uiController.text = _unitsCalculated.toString();
-      _insulinSort = settings.bolus;
+      setState(() {
+        _insulinSort = settings.bolus;
+      });
       showDialog(
         context: context,
         builder: (BuildContext context) {
@@ -907,8 +909,8 @@ class ScanResultTile extends StatelessWidget {
   }
 }
 
-// class for getting the value from ESP32 and passing the value to the 
-// Blood-Sugar_Level TextFormField Controller 
+// class for getting the value from ESP32 and passing the value to the
+// Blood-Sugar_Level TextFormField Controller
 
 class Value extends StatefulWidget {
   Value({Key key, this.device}) : super(key: key);

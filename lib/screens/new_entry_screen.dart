@@ -232,7 +232,9 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
       int _unitsCalculated =
           ((((value - 100) ~/ settings.relation) * factor).toInt());
       _uiController.text = _unitsCalculated.toString();
-      _insulinSort = settings.bolus;
+      setState(() {
+        _insulinSort = settings.bolus;
+      });
       showDialog(
         context: context,
         builder: (BuildContext context) {
@@ -362,6 +364,9 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
         _sport,
         _bed,
       );
+      _cvController.text = '';
+      _uiController.text = '';
+      _nController.text = '';
       Navigator.of(context).pop();
     }
     setState(() {
@@ -824,7 +829,7 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
   }
 }
 
-// class for building a singe bluetooth device liste tile 
+// class for building a singe bluetooth device liste tile
 
 class ScanResultTile extends StatelessWidget {
   const ScanResultTile({Key key, this.result, this.onTap}) : super(key: key);
@@ -881,8 +886,8 @@ class ScanResultTile extends StatelessWidget {
   }
 }
 
-// class for getting the value from ESP32 and passing the value to the 
-// Blood-Sugar_Level TextFormField Controller 
+// class for getting the value from ESP32 and passing the value to the
+// Blood-Sugar_Level TextFormField Controller
 
 class Value extends StatefulWidget {
   Value({Key key, this.device}) : super(key: key);
