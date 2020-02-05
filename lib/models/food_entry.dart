@@ -1,5 +1,7 @@
 import 'dart:io';
 
+// class that defines a Food Entry 
+
 class Food {
   final String id;
   final File image;

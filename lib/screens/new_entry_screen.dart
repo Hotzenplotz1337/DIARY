@@ -16,6 +16,20 @@ final _cvController = TextEditingController();
 final _uiController = TextEditingController();
 final _nController = TextEditingController();
 
+bool bluetooth = false;
+
+bool search = false;
+
+getList() {
+  FlutterBlue.instance.startScan(timeout: Duration(seconds: 4));
+  search = true;
+}
+
+stopScan() {
+  FlutterBlue.instance.stopScan();
+  search = false;
+}
+
 class NewEntryScreen extends StatefulWidget {
   NewEntryScreen({
     Key key,
@@ -26,20 +40,15 @@ class NewEntryScreen extends StatefulWidget {
 }
 
 class _NewEntryScreenState extends State<NewEntryScreen> {
-  // final String serviceUuid = "2d70aaee-2170-11ea-978f-2e728ce88125";
-  // final String characteristicUuid = "2d70ad8c-2170-11ea-978f-2e728ce88125";
-  // String _deviceName = '';
   bool isReady = false;
   bool reqVal = false;
 
-  // Stream<List<int>> stream;
-
-  // Zur Validierung des Messwertes
+  // important for validating the Blood-Sugar_Level
 
   var _validate = true;
   var _consume = false;
 
-  // TextEditingController werden zum Erfassen der Eingaben im Formular verwendet
+  // variables important for getting user input
 
   final _id = DateTime.now().toString();
   static DateTime dt = DateTime.now();
@@ -67,6 +76,8 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
     getSettings();
   }
 
+// method to get current user settings from Shared Preferences
+
   Future getSettings() async {
     var pref = await SharedPreferences.getInstance();
     if (pref.containsKey('rangeStart')) {
@@ -85,6 +96,8 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
       });
     }
   }
+
+  // method for handling the change of the radio buttons
 
   void _handleRadioValueChange(int value) {
     setState(() {
@@ -123,9 +136,12 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
     });
   }
 
-  // Funktion, bei der Korrektureinheiten berechnet werden (
-  // Blutzuckermesswert - MaxRange / Relation)und je nach Wert
-  // dem Anwender der App verschiedene Hinweise angezeigt werden
+  // method to calculate insulin units to correct a too high Blood-Sugar-Level
+  // ((Current Blood-Sugar-Level - Target Level) / Relation ) * Correcting Factor = Calculated Units
+  // the correcting factor depends on the TimeOfDay
+  // morning  =>   (TimeofDay >= 6am && TimeofDay < 11am)
+  // noon     =>   (TimeofDay >= 11am && TimeofDay < 5pm)
+  // evening  =>   (TimeofDay >= 5pm && TimeofDay < 6am)
 
   bool _calculateInsulinUnits(int value, TimeOfDay time, Settings settings) {
     print(value);
@@ -256,12 +272,13 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
       return true;
   }
 
-  // Validierung des Eintrags und Ausführung des Sepicherns
+  // method to validate a Diary Entry
+  // if it is validated, it gets saved
 
   void _saveEntry(int value, TimeOfDay time, Settings settings) {
-    // Überüfung des Messwertes, ob dieser in der
-    // Spanne von einschließlich 50-500 liegt und
-    // algemein vorhanden ist
+    // Check if the Blood-Sugar-Level is between 40 and 500
+    // and if a Blood-Sugar-Level was entered or not
+
     if (_cvController.text.isEmpty) {
       _validate = false;
       showDialog(
@@ -289,7 +306,7 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
           );
         },
       );
-    } else if (int.tryParse(_cvController.text) >= 50 &&
+    } else if (int.tryParse(_cvController.text) >= 40 &&
         int.tryParse(_cvController.text) <= 500) {
       if (_uiController.text.isEmpty &&
           int.tryParse(_cvController.text) > settings.range.end &&
@@ -353,48 +370,37 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
     });
   }
 
-  bool bluetooth = false;
-
-  bool search = false;
-
-  getList() {
-    FlutterBlue.instance.startScan(timeout: Duration(seconds: 4));
-    search = true;
-  }
-
-  stopScan() {
-    FlutterBlue.instance.stopScan();
-    search = false;
-  }
-
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () {
+        stopScan();
         return new Future.value(true);
       },
       child: StreamBuilder<BluetoothState>(
-          stream: FlutterBlue.instance.state,
-          initialData: BluetoothState.unknown,
-          builder: (context, snapshot) {
-            final state = snapshot.data;
-            if (state == BluetoothState.on) {
-              bluetooth = true;
-            }
-            return Scaffold(
-              appBar: AppBar(
-                iconTheme: IconThemeData(color: Colors.white),
-                backgroundColor: Theme.of(context).accentColor,
-                title: Text(
-                  'New Entry',
-                  style: GoogleFonts.openSans(
-                    textStyle: TextStyle(color: Colors.white),
-                    fontSize: 20,
-                  ),
+        stream: FlutterBlue.instance.state,
+        initialData: BluetoothState.unknown,
+        builder: (context, snapshot) {
+          final state = snapshot.data;
+          if (state == BluetoothState.on) {
+            bluetooth = true;
+          }
+          return Scaffold(
+            appBar: AppBar(
+              iconTheme: IconThemeData(color: Colors.white),
+              backgroundColor: Theme.of(context).accentColor,
+              title: Text(
+                'New Entry',
+                style: GoogleFonts.openSans(
+                  textStyle: TextStyle(color: Colors.white),
+                  fontSize: 20,
                 ),
-                elevation: 0,
               ),
-              body: ListView(shrinkWrap: true, children: <Widget>[
+              elevation: 0,
+            ),
+            body: ListView(
+              shrinkWrap: true,
+              children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Column(
@@ -430,38 +436,90 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: ExpansionTile(
-                          backgroundColor: Colors.blueGrey[900],
-                          onExpansionChanged: !search ? getList() : stopScan(),
-                          title: Text('Show Device List',
-                              style: TextStyle(color: Colors.white)),
-                          children: <Widget>[
-                            StreamBuilder<List<ScanResult>>(
-                              stream: FlutterBlue.instance.scanResults,
-                              initialData: [],
-                              builder: (c, snapshot) => Column(
-                                children: snapshot.data
-                                    .map((r) =>
-                                            // r.device.id.toString()
-                                            // == '24:6F:28:A1:B5:16'?
-                                            ScanResultTile(
-                                              result: r,
-                                              onTap: () => Navigator.of(context)
-                                                  .push(MaterialPageRoute(
-                                                      builder: (context) {
-                                                r.device.connect();
-                                                // if (r.device.id.toString() ==
-                                                //     '24:6F:28:A1:B5:16')
-                                                return Value(device: r.device);
-                                              })),
-                                            )
-                                        // : Container(),
-                                        )
-                                    .toList(),
+                        child: snapshot.data == BluetoothState.on
+                            ? ExpansionTile(
+                                backgroundColor: Colors.blueGrey[900],
+                                leading: StreamBuilder(
+                                  stream: FlutterBlue.instance.isScanning,
+                                  initialData: false,
+                                  builder: (c, snapshot) {
+                                    if (snapshot.data) {
+                                      return FlatButton(
+                                        child: Icon(
+                                          FontAwesomeIcons.stop,
+                                          color: Colors.white,
+                                        ),
+                                        onPressed: () =>
+                                            FlutterBlue.instance.stopScan(),
+                                        color: Colors.blueGrey[700],
+                                        shape: new RoundedRectangleBorder(
+                                            borderRadius:
+                                                new BorderRadius.circular(
+                                                    10.0)),
+                                      );
+                                    } else {
+                                      return FlatButton(
+                                          child: Icon(
+                                            FontAwesomeIcons.search,
+                                            color: Colors.white,
+                                          ),
+                                          color: Colors.blueGrey[700],
+                                          shape: new RoundedRectangleBorder(
+                                              borderRadius:
+                                                  new BorderRadius.circular(
+                                                      10.0)),
+                                          onPressed: () => FlutterBlue.instance
+                                              .startScan(
+                                                  timeout:
+                                                      Duration(seconds: 4)));
+                                    }
+                                  },
+                                ),
+                                title: Text('Show Device List',
+                                    style: TextStyle(color: Colors.white)),
+                                children: <Widget>[
+                                  StreamBuilder<List<ScanResult>>(
+                                    stream: FlutterBlue.instance.scanResults,
+                                    initialData: [],
+                                    builder: (c, snapshot) => Column(
+                                      children: snapshot.data
+                                          .map((r) => ScanResultTile(
+                                                    result: r,
+                                                    onTap: () {
+                                                      stopScan();
+                                                      Navigator.of(context)
+                                                          .push(
+                                                        MaterialPageRoute(
+                                                          builder: (context) {
+                                                            r.device.connect();
+                                                            return Value(
+                                                                device:
+                                                                    r.device);
+                                                          },
+                                                        ),
+                                                      );
+                                                    },
+                                                  )
+                                              // : Container(),
+                                              )
+                                          .toList(),
+                                    ),
+                                  ),
+                                ],
+                              )
+                            : Container(
+                                width: double.infinity,
+                                height: 30,
+                                child: Center(
+                                  child: Text(
+                                    'Bluetooth Disabled',
+                                    style: TextStyle(
+                                      color: Colors.blueGrey[900],
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -757,12 +815,16 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
                     ],
                   ),
                 ),
-              ]),
-            );
-          }),
+              ],
+            ),
+          );
+        },
+      ),
     );
   }
 }
+
+// class for building a singe bluetooth device liste tile 
 
 class ScanResultTile extends StatelessWidget {
   const ScanResultTile({Key key, this.result, this.onTap}) : super(key: key);
@@ -818,6 +880,9 @@ class ScanResultTile extends StatelessWidget {
     );
   }
 }
+
+// class for getting the value from ESP32 and passing the value to the 
+// Blood-Sugar_Level TextFormField Controller 
 
 class Value extends StatefulWidget {
   Value({Key key, this.device}) : super(key: key);
@@ -903,15 +968,18 @@ class _ValueState extends State<Value> {
                 'Are you sure',
                 style: TextStyle(color: Colors.white70),
               ),
-              content:
-                  Text('Do you want to disconnect the device and go back?',
-                    style: TextStyle(color: Colors.white70),),
+              content: Text(
+                'Do you want to disconnect the device and go back?',
+                style: TextStyle(color: Colors.white70),
+              ),
               actions: <Widget>[
                 FlatButton(
                   color: Colors.blueGrey[700],
                   onPressed: () => Navigator.of(context).pop(false),
-                  child: Text('No',
-                    style: TextStyle(color: Colors.white70),),
+                  child: Text(
+                    'No',
+                    style: TextStyle(color: Colors.white70),
+                  ),
                 ),
                 FlatButton(
                   color: Colors.blueGrey[700],
@@ -1034,15 +1102,19 @@ class _ValueState extends State<Value> {
                                           isSynced = true;
                                           _getCurrentValue();
                                           return Scaffold.of(context)
-                                              .showSnackBar(SnackBar(
-                                            content: Text(
-                                                "Last Blood Sugar Level synced"),
-                                          ));
+                                              .showSnackBar(
+                                            SnackBar(
+                                              content: Text(
+                                                  "Last Blood Sugar Level synced"),
+                                            ),
+                                          );
                                         },
-                                        child: Text('Sync Measurement',
-                                            style: TextStyle(
-                                              color: Colors.white,
-                                            )),
+                                        child: Text(
+                                          'Sync Measurement',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),

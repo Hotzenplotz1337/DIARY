@@ -17,7 +17,9 @@ class EditFoodScreen extends StatefulWidget {
 }
 
 class _EditFoodScreenState extends State<EditFoodScreen> {
-  // TextEditingController werden zum Erfassen der Eingaben im Formular verwendet
+  
+  // variables important for getting user input
+
   static Food editFood;
   var _id = DateTime.now().toIso8601String();
   File _image;
@@ -30,6 +32,8 @@ class _EditFoodScreenState extends State<EditFoodScreen> {
   void _selectImage(File pickedImage) {
     _image = pickedImage;
   }
+
+  // the Food Entry that is going to get edited gets initialized
 
   @override
   void didChangeDependencies() {
@@ -45,6 +49,9 @@ class _EditFoodScreenState extends State<EditFoodScreen> {
 
     super.didChangeDependencies();
   }
+
+  // method to validate a Food Entry
+  // if it is validated, it gets saved
 
   void _saveFood() {
     if (_nController.text.isEmpty) {

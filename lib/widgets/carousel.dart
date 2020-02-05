@@ -6,6 +6,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../providers/entrys.dart';
 import '../models/diary_entry.dart';
 
+// class that builds the vertical Scrollable List on Home Screen
+
 class Carousel extends StatefulWidget {
   Carousel({Key key}) : super(key: key);
 

@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:path/path.dart' as path;
 import 'package:path_provider/path_provider.dart' as syspaths;
 
+// class for picking or taking a picture for a food entry
+
 class ImageInput extends StatefulWidget {
   final Function onSelectImage;
 
@@ -18,6 +20,9 @@ class ImageInput extends StatefulWidget {
 class _ImageInputState extends State<ImageInput> {
   dynamic pickImageError;
   File _storedImage;
+
+  // method that gets triggered, if you tap the "Take Picture" button
+  // the user can take a image with device camera app
 
   Future<void> _takePicture() async {
     try {
@@ -40,6 +45,9 @@ class _ImageInputState extends State<ImageInput> {
       pickImageError = e;
     }
   }
+
+  // method that gets triggered, if you tap the "Open Gallery" button
+  // the user can select a image file from device storage
 
   Future<void> _setPicture() async {
     try {

@@ -13,8 +13,6 @@ import './screens/new_food_screen.dart';
 import './screens/edit_food_screen.dart';
 import './screens/settings_screen.dart';
 import './screens/food_screen.dart';
-import 'lifecycle_manager.dart';
-import 'locator.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -31,7 +29,6 @@ void main() async {
     pref.setDouble('evening', 1.5);
     pref.setInt('relation', 50);
   }
-  setupLocator();
   runApp(MyApp());
 }
 
@@ -39,38 +36,35 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return LifeCycleManager(
-      child: MultiProvider(
-        providers: [
-          ChangeNotifierProvider.value(
-            value: Entrys(),
-          ),
-          ChangeNotifierProvider.value(
-            value: Foods(),
-          ),
-        ],
-        child: MaterialApp(
-          title: 'Diabetes Diary',
-          theme: ThemeData(
-            textTheme:
-                GoogleFonts.openSansTextTheme(Theme.of(context).textTheme),
-            primarySwatch: Colors.blueGrey,
-            accentColor: Colors.blueGrey[800],
-            canvasColor: Colors.blueGrey[800],
-            backgroundColor: Colors.blueGrey[700],
-          ),
-          home: HomeScreen(),
-          routes: {
-            HomeScreen.routeName: (ctx) => HomeScreen(),
-            DiaryScreen.routeName: (ctx) => DiaryScreen(),
-            NewEntryScreen.routeName: (ctx) => NewEntryScreen(),
-            EditEntryScreen.routeName: (ctx) => EditEntryScreen(),
-            FoodScreen.routeName: (ctx) => FoodScreen(),
-            NewFoodScreen.routeName: (ctx) => NewFoodScreen(),
-            EditFoodScreen.routeName: (ctx) => EditFoodScreen(),
-            SettingsScreen.routeName: (ctx) => SettingsScreen(),
-          },
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider.value(
+          value: Entrys(),
         ),
+        ChangeNotifierProvider.value(
+          value: Foods(),
+        ),
+      ],
+      child: MaterialApp(
+        title: 'Diabetes Diary',
+        theme: ThemeData(
+          textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme),
+          primarySwatch: Colors.blueGrey,
+          accentColor: Colors.blueGrey[800],
+          canvasColor: Colors.blueGrey[800],
+          backgroundColor: Colors.blueGrey[700],
+        ),
+        home: HomeScreen(),
+        routes: {
+          HomeScreen.routeName: (ctx) => HomeScreen(),
+          DiaryScreen.routeName: (ctx) => DiaryScreen(),
+          NewEntryScreen.routeName: (ctx) => NewEntryScreen(),
+          EditEntryScreen.routeName: (ctx) => EditEntryScreen(),
+          FoodScreen.routeName: (ctx) => FoodScreen(),
+          NewFoodScreen.routeName: (ctx) => NewFoodScreen(),
+          EditFoodScreen.routeName: (ctx) => EditFoodScreen(),
+          SettingsScreen.routeName: (ctx) => SettingsScreen(),
+        },
       ),
     );
   }

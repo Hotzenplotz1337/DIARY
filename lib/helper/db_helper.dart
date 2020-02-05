@@ -3,7 +3,8 @@ import 'package:path/path.dart' as path;
 import 'package:sqflite/sqlite_api.dart';
 
 class DBHelper {
-  // Erzeugen der Datenbank
+
+  // method to create the Diary Entry database
 
   static Future<Database> database() async {
     final dbPath = await sql.getDatabasesPath();
@@ -14,7 +15,7 @@ class DBHelper {
     }, version: 1);
   }
 
-  // neuen Eintrag in Datenbank einfügen CREATE
+  // method to insert a new Diary Entry to the database
 
   static Future<void> insertEntry(
       String table, Map<String, Object> data) async {
@@ -26,7 +27,7 @@ class DBHelper {
     );
   }
 
-  // Einträge abrufen READ
+  // method to get all Diary Entrys from databse
 
   static Future<List<Map<String, dynamic>>> getData(
       String table, day, month, year, bool dayPicked) async {
@@ -45,7 +46,7 @@ class DBHelper {
           );
   }
 
-  // Einträge für bestimten Tag abrufen
+  // method to get specific Diary Entrys from database, searched for specific day
 
   static Future<List<Map<String, dynamic>>> getTodaysData(
     String table,
@@ -63,7 +64,7 @@ class DBHelper {
     );
   }
 
-  // Eintrag ändern UPDATE
+  // method to update a Diary Entry from database
 
   static Future<void> updateEntry(
       String table, id, Map<String, Object> data) async {
@@ -76,7 +77,7 @@ class DBHelper {
     );
   }
 
-  //Eintrag löschen DELETE
+  // method to delete a Diary Entry from database 
 
   static Future<void> removeEntry(String table, id) async {
     final db = await DBHelper.database();

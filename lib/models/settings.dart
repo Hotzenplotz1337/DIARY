@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// class that defines the Settings
+
 class Settings {
   RangeValues range;
   String basal;

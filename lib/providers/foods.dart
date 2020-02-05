@@ -5,12 +5,12 @@ import 'package:flutter/foundation.dart';
 import '../helper/db_food.dart';
 import '../models/food_entry.dart';
 
-class Foods with ChangeNotifier {
-  // Liste wird deklariert, die später die Einträge enthalten soll
+// provider class for Food Entrys, used to get Food Data in several screens
 
+class Foods with ChangeNotifier {
   List<Food> _foods = [];
 
-  // Kopie von _foods wird erzeugt, damit die eigentliche Liste nicht direkt verändert wird
+  // copy of _foods, so _foods never gets directly edited from other screens
 
   List<Food> get foods {
     return [..._foods.reversed];

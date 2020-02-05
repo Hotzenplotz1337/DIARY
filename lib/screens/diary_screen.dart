@@ -22,9 +22,11 @@ class _DiaryScreenState extends State<DiaryScreen> {
   }
 
   // Settings needed
+  
   RangeValues range;
 
   // Entry data;
+
   String _entryId;
   DateTime _selectedDate;
   String day = '${DateFormat('dd').format(DateTime.now())}';
@@ -33,9 +35,6 @@ class _DiaryScreenState extends State<DiaryScreen> {
   bool _dateIsPicked = false;
   bool isExpand = false;
 
-  // Farbe des Blutzuckermesswerts wird bestimmt (grün ist gut, orange
-  // ist etwas erhöht oder etwas zu niedrig, rot ist erheblich erhöht oder
-  // erheblich zu niedrig)
 
   activitySelected(bool sel) {
     if (sel) {
@@ -50,17 +49,24 @@ class _DiaryScreenState extends State<DiaryScreen> {
     _getSettings();
   }
 
+  // colors for the Blood-Sugar-Level value 
+  // green => good value
+  // orange => slightly increased value
+  // red => too high value
+
   getColor(String val, range) {
     var value = int.parse(val);
     if (value <= range.end && value >= range.start) {
       return Colors.green;
     } else if (value > range.end && value < 240 ||
-        value < range.start && value > 50) {
+        value < range.start && value > 40) {
       return Colors.orange;
-    } else if (value <= 50 || value >= 240) {
+    } else if (value <= 40 || value >= 240) {
       return Colors.red;
     }
   }
+
+  // method to get current Settings from Shared Preferences
 
   Future _getSettings() async {
     SharedPreferences pref = await SharedPreferences.getInstance();

@@ -1,5 +1,5 @@
 
-// Klasse für einen einzelnen Eintrag im Tagebuch, Bestandteile werden festgelegt
+// class that defines a Diary Entry
 
 class Entry {
   final String id;

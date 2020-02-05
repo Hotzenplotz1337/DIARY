@@ -8,6 +8,8 @@ import '../providers/foods.dart';
 import '../screens/new_food_screen.dart';
 import '../screens/edit_food_screen.dart';
 
+// class that builds the Food Screen
+
 class FoodScreen extends StatefulWidget {
   static const routeName = '/food-list-screen';
   @override
@@ -15,7 +17,11 @@ class FoodScreen extends StatefulWidget {
 }
 
 class _FoodScreenState extends State<FoodScreen> {
+
   String _entryId;
+  
+  // variables that are used for search
+
   String search = '';
   int count = 0;
   final _searchCont = TextEditingController();

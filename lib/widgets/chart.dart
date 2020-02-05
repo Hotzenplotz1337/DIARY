@@ -9,6 +9,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../providers/entrys.dart';
 import '../models/diary_entry.dart';
 
+// class that builds the Bar Chart on Home Screen
+
 class VerticalBarLabelChart extends StatefulWidget {
   @override
   _VerticalBarLabelChartState createState() => _VerticalBarLabelChartState();
@@ -25,11 +27,14 @@ class _VerticalBarLabelChartState extends State<VerticalBarLabelChart> {
   AppBar appBar = AppBar(
     title: Text('Get appBar width'),
   );
+  
   @override
   void initState() {
     super.initState();
     _getSettings();
   }
+
+  // method to get the current Settings
 
   Future _getSettings() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
@@ -41,13 +46,6 @@ class _VerticalBarLabelChartState extends State<VerticalBarLabelChart> {
 
   Orientation orientation;
 
-  // [BarLabelDecorator] will automatically position the label
-  // inside the bar if the label will fit. If the label will not fit,
-  // it will draw outside of the bar.
-  // Labels can always display inside or outside using [LabelPosition].
-  //
-  // Text style for inside / outside can be controlled independently by setting
-  // [insideLabelStyleSpec] and [outsideLabelStyleSpec].
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -59,16 +57,7 @@ class _VerticalBarLabelChartState extends State<VerticalBarLabelChart> {
               child: CircularProgressIndicator(),
             )
           : Consumer<Entrys>(
-              child: Center(
-                // child: Text(
-                //   'Got no entrys yet,\nstart adding some.',
-                //   style: TextStyle(
-                //     fontFamily: 'SourceSansPro',
-                //     fontSize: 20,
-                //     color: Colors.white,
-                //   ),
-                // ),
-              ),
+              child: Center(),
               builder: (ctx, diaryEntrys, ch) => diaryEntrys.entrys.length <= 0
                   ? ch
                   : Padding(
@@ -78,22 +67,10 @@ class _VerticalBarLabelChartState extends State<VerticalBarLabelChart> {
                         child: charts.BarChart(
                           _createSampleData(diaryEntrys.entrys),
                           animate: false,
-
                           defaultRenderer: charts.BarRendererConfig(
-                              // By default, bar renderer will draw rounded bars with a constant
-                              // radius of 100.
-                              // To not have any rounded corners, use [NoCornerStrategy]
-                              // To change the radius of the bars, use [ConstCornerStrategy]
+                              // draw rounded bars with a radius of 8
                               cornerStrategy:
                                   const charts.ConstCornerStrategy(8)),
-
-                          // Set a bar label decorator.
-                          // Example configuring different styles for inside/outside:
-                          //       barRendererDecorator: new charts.BarLabelDecorator(
-                          //          insideLabelStyleSpec: new charts.TextStyleSpec(...),
-                          //          outsideLabelStyleSpec: new charts.TextStyleSpec(...)),
-                          // barRendererDecorator: new charts.BarLabelDecorator<String>(),
-                          // domainAxis: new charts.OrdinalAxisSpec(),
                           behaviors: [
                             charts.RangeAnnotation(
                               [
@@ -117,32 +94,31 @@ class _VerticalBarLabelChartState extends State<VerticalBarLabelChart> {
                             ),
                           ],
                           domainAxis: charts.OrdinalAxisSpec(
-                              renderSpec: charts.SmallTickRendererSpec(
-
-                                  // Tick and Label styling here.
-                                  labelStyle: charts.TextStyleSpec(
-                                    fontSize: 8, // size in Pts.
-                                    color: charts.MaterialPalette.white,
-                                    lineHeight: 2,
-                                  ),
-
-                                  // Change the line colors to match text color.
-                                  lineStyle: charts.LineStyleSpec(
-                                      color: charts.MaterialPalette.white,
-                                      thickness: 1))),
-
-                          /// Assign a custom style for the measure axis.
+                            renderSpec: charts.SmallTickRendererSpec(
+                              // horizontal axis styling
+                              labelStyle: charts.TextStyleSpec(
+                                fontSize: 8, // size in Pts.
+                                color: charts.MaterialPalette.white,
+                                lineHeight: 2,
+                              ),
+                              lineStyle: charts.LineStyleSpec(
+                                color: charts.MaterialPalette.white,
+                                thickness: 1,
+                              ),
+                            ),
+                          ),
                           primaryMeasureAxis: charts.NumericAxisSpec(
-                              renderSpec: charts.GridlineRendererSpec(
-
-                                  // Tick and Label styling here.
-                                  labelStyle: charts.TextStyleSpec(
-                                      fontSize: 8, // size in Pts.
-                                      color: charts.MaterialPalette.white),
-
-                                  // Change the line colors to match text color.
-                                  lineStyle: charts.LineStyleSpec(
-                                      color: charts.MaterialPalette.white))),
+                            renderSpec: charts.GridlineRendererSpec(
+                              // vertical axis styling
+                              labelStyle: charts.TextStyleSpec(
+                                fontSize: 8, // size in Pts.
+                                color: charts.MaterialPalette.white,
+                              ),
+                              lineStyle: charts.LineStyleSpec(
+                                color: charts.MaterialPalette.white,
+                              ),
+                            ),
+                          ),
                         ),
                       ),
                     ),
@@ -150,8 +126,7 @@ class _VerticalBarLabelChartState extends State<VerticalBarLabelChart> {
     );
   }
 
-
-  /// Create one series with sample hard coded data.
+  // method to get the data for creating the barChart
   List<charts.Series<LinearValues, String>> _createSampleData(
       List<Entry> list) {
     List<LinearValues> data = [];
@@ -166,7 +141,6 @@ class _VerticalBarLabelChartState extends State<VerticalBarLabelChart> {
         domainFn: (LinearValues values, _) => values.date,
         measureFn: (LinearValues values, _) => values.values,
         data: data,
-        // strokeWidthPxFn: (LinearValues values, _) => 5,
         fillColorFn: (LinearValues values, __) =>
             (values.values < range.start || values.values > range.end)
                 ? (values.values > 50 && values.values < 240
@@ -178,7 +152,7 @@ class _VerticalBarLabelChartState extends State<VerticalBarLabelChart> {
   }
 }
 
-/// Sample ordinal data type.
+// implement a datatype for the barChart
 class LinearValues {
   final String date;
   final int values;

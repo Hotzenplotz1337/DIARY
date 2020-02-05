@@ -16,7 +16,8 @@ class NewFoodScreen extends StatefulWidget {
 }
 
 class _NewFoodScreenState extends State<NewFoodScreen> {
-  // TextEditingController werden zum Erfassen der Eingaben im Formular verwendet
+
+  // variables important for getting user input
 
   final _id = DateTime.now().toIso8601String();
   File _image;
@@ -30,8 +31,10 @@ class _NewFoodScreenState extends State<NewFoodScreen> {
     _image = pickedImage;
   }
 
-  // final _formKey = GlobalKey<FormState>();
 
+  // method to validate a Food Entry
+  // if it is validated, it gets saved
+  
   void _saveFood() {
     if (_nController.text.isEmpty) {
       _validate = false;

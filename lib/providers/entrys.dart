@@ -3,12 +3,12 @@ import 'package:flutter/foundation.dart';
 import '../helper/db_helper.dart';
 import '../models/diary_entry.dart';
 
-class Entrys with ChangeNotifier {
-  // Liste wird deklariert, die später die Einträge enthalten soll
+// provider class for Diary Entrys, used to get Diary Data in several screens
 
+class Entrys with ChangeNotifier {
   List<Entry> _entrys = [];
 
-  // Kopie von _entrys wird erzeugt, damit die eigentliche Liste nicht direkt verändert wird
+  // copy of _entrys, so _entrys never gets directly edited from other screens
 
   List<Entry> get entrys {
     return [..._entrys.reversed];
@@ -79,10 +79,6 @@ class Entrys with ChangeNotifier {
       },
     );
   }
-
-  // List<Entry> getListData() {
-  //   return entrys;
-  // }
 
   Future<void> fetchAndSetEntrys(
       bool dayPicked, String day, String month, String year) async {
@@ -211,10 +207,4 @@ class Entrys with ChangeNotifier {
       },
     );
   }
-
-  // List<Entry> entryData(String day, String month, String year) {
-  //   // /final _entryIndex = _entrys.forEach((entry) => entry.id == id);
-  //   List<Entry> getData = _entrys.where((entry) =>
-  //       entry.day == day && entry.month == month && entry.year == year);
-  // }
 }
