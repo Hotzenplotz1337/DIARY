@@ -555,7 +555,7 @@ class _EditEntryScreenState extends State<EditEntryScreen> {
                           children: <Widget>[
                             Flexible(
                               child: TextFormField(
-                                maxLength: 3,
+                                maxLength: 2,
                                 style: TextStyle(
                                   color: Colors.white,
                                 ),
