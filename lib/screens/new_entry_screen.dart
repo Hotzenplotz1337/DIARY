@@ -158,7 +158,7 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
           return AlertDialog(
             backgroundColor: Colors.blueGrey[900],
             title: Text(
-              'Your inserted value is low.',
+              'Your inserted level is low.',
               style: TextStyle(
                 color: Colors.white70,
               ),
@@ -195,13 +195,13 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
           return AlertDialog(
             backgroundColor: Colors.blueGrey[900],
             title: Text(
-              'Your inserted value is extremely low.',
+              'Your inserted level is extremely low.',
               style: TextStyle(
                 color: Colors.white70,
               ),
             ),
             content: Text(
-              'Please consume some sugary food, notify someone about your situation and stay calm until your value gets normal.',
+              'Please consume some sugary food, notify someone about your situation and stay calm until your level gets normal.',
               style: TextStyle(
                 color: Colors.white70,
               ),
@@ -241,7 +241,7 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
           return AlertDialog(
             backgroundColor: Colors.blueGrey[900],
             title: Text(
-              'Your inserted value is too high.',
+              'Your inserted level is too high.',
               style: TextStyle(
                 color: Colors.white70,
               ),
@@ -328,7 +328,7 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
               style: TextStyle(color: Colors.white70),
             ),
             content: Text(
-              'Please enter a valid Blood Sugar Level.',
+              'Please enter a valid blood sugar level.',
               style: TextStyle(color: Colors.white70),
             ),
             actions: <Widget>[

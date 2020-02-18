@@ -21,11 +21,11 @@ class _NewFoodScreenState extends State<NewFoodScreen> {
 
   final _id = DateTime.now().toIso8601String();
   File _image;
-  final _nController = TextEditingController(); // Name des Lebensmittels
-  final _cController = TextEditingController(); // Kohlehydrate
-  final _desCont = TextEditingController(); // Beschreibung
-  var category; // Lebensmittelkategorie
-  bool _validate = false; // darf gespeichert werden
+  final _nController = TextEditingController(); // food name
+  final _cController = TextEditingController(); // carbohydrates
+  final _desCont = TextEditingController(); // description
+  var category; // food category
+  bool _validate = false; 
 
   void _selectImage(File pickedImage) {
     _image = pickedImage;
@@ -73,11 +73,11 @@ class _NewFoodScreenState extends State<NewFoodScreen> {
           return AlertDialog(
             backgroundColor: Colors.blueGrey[900],
             title: Text(
-              'Invalid Carbohydrates',
+              'Invalid Carbohydrates.',
               style: TextStyle(color: Colors.white70),
             ),
             content: Text(
-              'Please enter a valid Amount of Carbohydrates (from 0-100).',
+              'Please enter a valid amount of carbohydrates (from 0-100).',
               style: TextStyle(color: Colors.white70),
             ),
             actions: <Widget>[
