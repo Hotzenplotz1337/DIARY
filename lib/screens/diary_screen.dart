@@ -22,7 +22,7 @@ class _DiaryScreenState extends State<DiaryScreen> {
   }
 
   // Settings needed
-  
+
   RangeValues range;
 
   // Entry data;
@@ -34,7 +34,6 @@ class _DiaryScreenState extends State<DiaryScreen> {
   String year = '${DateFormat('yyyy').format(DateTime.now())}';
   bool _dateIsPicked = false;
   bool isExpand = false;
-
 
   activitySelected(bool sel) {
     if (sel) {
@@ -49,7 +48,7 @@ class _DiaryScreenState extends State<DiaryScreen> {
     _getSettings();
   }
 
-  // colors for the Blood-Sugar-Level value 
+  // colors for the Blood-Sugar-Level value
   // green => good value
   // orange => slightly increased value
   // red => too high value
@@ -294,8 +293,14 @@ class _DiaryScreenState extends State<DiaryScreen> {
                                                         FontAwesomeIcons
                                                             .syringe,
                                                         color: diaryEntrys
-                                                                .entrys[index]
-                                                                .isInjected
+                                                                    .entrys[
+                                                                        index]
+                                                                    .isInjected &&
+                                                                diaryEntrys
+                                                                        .entrys[
+                                                                            index]
+                                                                        .unitsInjected !=
+                                                                    '0'
                                                             ? Colors.white
                                                             : Colors
                                                                 .blueGrey[900],
@@ -369,63 +374,73 @@ class _DiaryScreenState extends State<DiaryScreen> {
                                           },
                                         ),
                                         title: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            (diaryEntrys
+                                                            .entrys[index]
+                                                            .unitsInjected
+                                                            .isEmpty ||
+                                                        diaryEntrys
+                                                                .entrys[index]
+                                                                .unitsInjected ==
+                                                            '0') &&
+                                                    diaryEntrys.entrys[index]
+                                                        .notes.isEmpty
+                                                ? Text(
+                                                    'No notes left.',
+                                                    style: TextStyle(
+                                                      fontSize: 18,
+                                                      fontWeight:
+                                                          FontWeight.w300,
+                                                      color: Colors.white,
+                                                    ),
+                                                  )
+                                                : Text(
+                                                    diaryEntrys
+                                                            .entrys[index]
+                                                            .unitsInjected
+                                                            .isEmpty
+                                                        ? ''
+                                                        : 'Injected Units: ${diaryEntrys.entrys[index].unitsInjected}',
+                                                    style: TextStyle(
+                                                      fontSize: 18,
+                                                      fontWeight:
+                                                          FontWeight.w300,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                            Text(
                                               diaryEntrys
                                                           .entrys[index]
                                                           .unitsInjected
-                                                          .isEmpty &&
+                                                          .isEmpty ||
                                                       diaryEntrys.entrys[index]
-                                                          .notes.isEmpty
-                                                  ? Text(
-                                                      'No notes left.',
-                                                      style: TextStyle(
-                                                        fontSize: 18,
-                                                        fontWeight:
-                                                            FontWeight.w300,
-                                                        color: Colors.white,
-                                                      ),
-                                                    )
-                                                  : Text(
-                                                      diaryEntrys
-                                                              .entrys[index]
-                                                              .unitsInjected
-                                                              .isEmpty
-                                                          ? ''
-                                                          : 'Injected Units: ${diaryEntrys.entrys[index].unitsInjected}',
-                                                      style: TextStyle(
-                                                        fontSize: 18,
-                                                        fontWeight:
-                                                            FontWeight.w300,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                              Text(
-                                                diaryEntrys.entrys[index]
-                                                        .unitsInjected.isEmpty
-                                                    ? ''
-                                                    : 'Insulin: ${diaryEntrys.entrys[index].sort}',
-                                                style: TextStyle(
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.w300,
-                                                  color: Colors.white,
-                                                ),
+                                                              .sort ==
+                                                          null
+                                                  ? ''
+                                                  : 'Insulin: ${diaryEntrys.entrys[index].sort}',
+                                              style: TextStyle(
+                                                fontSize: 18,
+                                                fontWeight: FontWeight.w300,
+                                                color: Colors.white,
                                               ),
-                                              Text(
-                                                diaryEntrys.entrys[index].notes
-                                                        .isEmpty
-                                                    ? ''
-                                                    : 'Notes: ${diaryEntrys.entrys[index].notes}',
-                                                style: TextStyle(
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.w300,
-                                                  color: Colors.white,
-                                                ),
+                                            ),
+                                            Text(
+                                              diaryEntrys.entrys[index].notes
+                                                      .isEmpty
+                                                  ? ''
+                                                  : 'Notes: ${diaryEntrys.entrys[index].notes}',
+                                              style: TextStyle(
+                                                fontSize: 18,
+                                                fontWeight: FontWeight.w300,
+                                                color: Colors.white,
                                               ),
-                                            ]),
+                                            ),
+                                          ],
+                                        ),
                                       )
                                     ]),
                               ),

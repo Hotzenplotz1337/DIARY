@@ -144,13 +144,6 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
   // evening  =>   (TimeofDay >= 5pm && TimeofDay < 6am)
 
   bool _calculateInsulinUnits(int value, TimeOfDay time, Settings settings) {
-    print(value);
-    print('${settings.range.start}');
-    print('${settings.range.start}');
-    print('${settings.relation}');
-    print('${settings.morning}');
-    print('${settings.noon}');
-    print('${settings.evening}');
     if (value > 50 && value < settings.range.start) {
       showDialog(
         context: context,
@@ -310,8 +303,12 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
       );
     } else if (int.tryParse(_cvController.text) >= 40 &&
         int.tryParse(_cvController.text) <= 500) {
-      if (_uiController.text.isEmpty &&
+      if ((_uiController.text.isEmpty || _uiController.text == '0') &&
           int.tryParse(_cvController.text) > settings.range.end &&
+          !_consume) {
+        _validate = _calculateInsulinUnits(value, time, settings);
+      } else if (int.tryParse(_cvController.text) >= 40 &&
+          int.tryParse(_cvController.text) < settings.range.start &&
           !_consume) {
         _validate = _calculateInsulinUnits(value, time, settings);
       } else
@@ -344,10 +341,14 @@ class _NewEntryScreenState extends State<NewEntryScreen> {
         },
       );
     }
-    if (_uiController.text.isEmpty) {
+    if (_uiController.text.isEmpty || _uiController.text == '0') {
       _isInjected = false;
     }
     if (_validate) {
+      if (int.tryParse(_cvController.text) >= settings.range.start &&
+          int.tryParse(_cvController.text) <= settings.range.end) {
+        _uiController.text = '';
+      }
       Provider.of<Entrys>(context, listen: false).addEntry(
         _id,
         _day,
