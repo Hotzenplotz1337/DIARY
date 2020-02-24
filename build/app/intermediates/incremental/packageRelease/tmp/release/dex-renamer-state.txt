@@ -1,4 +1,4 @@
-#Wed Feb 19 11:20:40 CET 2020
-base.0=C\:\\Users\\linke\\Desktop\\finale Version\\DIARYBluetooth\\build\\app\\intermediates\\transforms\\r8\\release\\0\\classes.dex
+#Mon Feb 24 09:46:01 CET 2020
+base.0=C\:\\Users\\linke\\Desktop\\finale Version\\DIARY_Bluetooth\\build\\app\\intermediates\\transforms\\r8\\release\\0\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

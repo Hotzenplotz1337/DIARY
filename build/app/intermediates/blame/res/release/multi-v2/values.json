@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\linke\\Desktop\\finale Version\\DIARYBluetooth\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\linke\\Desktop\\finale Version\\DIARY_Bluetooth\\build\\app\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\linke\\Desktop\\finale Version\\DIARY_Bluetooth\\android\\app\\src\\main\\res\\values\\color.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "44",
+                        "endOffsets": "97"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "116",
+                        "endColumns": "44",
+                        "endOffsets": "156"
+                    }
+                },
                 {
                     "source": "C:\\Users\\linke\\.gradle\\caches\\transforms-2\\files-2.1\\ae13efc3dbae5c9ee58d4933337fcd21\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
                     "from": {
@@ -23,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\linke\\Desktop\\finale Version\\DIARYBluetooth\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\linke\\Desktop\\finale Version\\DIARY_Bluetooth\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -39,23 +56,6 @@
                         "endLines": "46",
                         "endColumns": "12",
                         "endOffsets": "2814"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\linke\\Desktop\\finale Version\\DIARYBluetooth\\android\\app\\src\\main\\res\\values\\color.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "44",
-                        "endOffsets": "97"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "116",
-                        "endColumns": "44",
-                        "endOffsets": "156"
                     }
                 },
                 {

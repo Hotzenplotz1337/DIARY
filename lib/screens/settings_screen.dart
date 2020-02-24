@@ -65,7 +65,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   @override
   void initState() {
-    super.initState();
+    super.initState();  
     getSettings();
   }
 

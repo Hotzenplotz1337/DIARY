@@ -1,0 +1,4 @@
+#Mon Feb 24 09:46:57 CET 2020
+base.0=C\:\\Users\\linke\\Desktop\\finale Version\\DIARY_Bluetooth\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
