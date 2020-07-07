@@ -7,6 +7,10 @@ import '../widgets/app_drawer.dart';
 import '../widgets/carousel.dart';
 import '../widgets/chart.dart';
 
+// class to build the Home Screen, combines the 2 widgets
+// - carousel.dart
+// - chart.dart
+
 class HomeScreen extends StatefulWidget {
   static const routeName = '/home-screen';
 
@@ -37,13 +41,13 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      body: OrientationBuilder(
+      body: OrientationBuilder(   
         builder: (context, orientation) {
           return GridView.count(
             shrinkWrap: true,
             primary: false,
-            crossAxisCount: orientation == Orientation.portrait ? 1 : 1,
-            childAspectRatio: orientation == Orientation.portrait
+            crossAxisCount: 1,
+            childAspectRatio: orientation == Orientation.portrait 
                 ? (MediaQuery.of(context).size.width + 30) /
                     (MediaQuery.of(context).size.height -
                         appBar.preferredSize.height)

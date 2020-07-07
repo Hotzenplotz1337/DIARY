@@ -6,7 +6,8 @@ import '../screens/home_screen.dart';
 import '../screens/diary_screen.dart';
 import '../screens/food_screen.dart';
 import '../screens/settings_screen.dart';
-// import '../screens/entry_list_screen.dart';
+
+// class that builds the AppDrawer (Navigation)
 
 class AppDrawer extends StatelessWidget {
   @override

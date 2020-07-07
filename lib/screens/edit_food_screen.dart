@@ -17,19 +17,23 @@ class EditFoodScreen extends StatefulWidget {
 }
 
 class _EditFoodScreenState extends State<EditFoodScreen> {
-  // TextEditingController werden zum Erfassen der Eingaben im Formular verwendet
+  
+  // variables important for getting user input
+
   static Food editFood;
   var _id = DateTime.now().toIso8601String();
   File _image;
-  final _nController = TextEditingController(); // Name des Lebensmittels
-  final _cController = TextEditingController(); // Kohlehydrate
-  final _desCont = TextEditingController(); // Beschreibung
-  var category; // Lebensmittelkategorie
-  bool _validate = false; // darf gespeichert werden
+  final _nController = TextEditingController(); // food name
+  final _cController = TextEditingController(); // carbohydrates
+  final _desCont = TextEditingController(); // description
+  var category; // food category
+  bool _validate = false; 
 
   void _selectImage(File pickedImage) {
     _image = pickedImage;
   }
+
+  // the Food Entry that is going to get edited gets initialized
 
   @override
   void didChangeDependencies() {
@@ -46,6 +50,9 @@ class _EditFoodScreenState extends State<EditFoodScreen> {
     super.didChangeDependencies();
   }
 
+  // method to validate a Food Entry
+  // if it is validated, it gets saved
+
   void _saveFood() {
     if (_nController.text.isEmpty) {
       _validate = false;
@@ -59,7 +66,7 @@ class _EditFoodScreenState extends State<EditFoodScreen> {
               style: TextStyle(color: Colors.white70),
             ),
             content: Text(
-              'Please enter a Name.',
+              'Please enter a name.',
               style: TextStyle(color: Colors.white70),
             ),
             actions: <Widget>[
@@ -84,11 +91,11 @@ class _EditFoodScreenState extends State<EditFoodScreen> {
           return AlertDialog(
             backgroundColor: Colors.blueGrey[900],
             title: Text(
-              'Invalid Carbohydrates',
+              'Invalid Carbohydrates.',
               style: TextStyle(color: Colors.white70),
             ),
             content: Text(
-              'Please enter a valid Amount of Carbohydrates (from 0-100).',
+              'Please enter a valid amount of carbohydrates (from 0-100).',
               style: TextStyle(color: Colors.white70),
             ),
             actions: <Widget>[

@@ -22,9 +22,11 @@ class _DiaryScreenState extends State<DiaryScreen> {
   }
 
   // Settings needed
+
   RangeValues range;
 
   // Entry data;
+
   String _entryId;
   DateTime _selectedDate;
   String day = '${DateFormat('dd').format(DateTime.now())}';
@@ -32,10 +34,6 @@ class _DiaryScreenState extends State<DiaryScreen> {
   String year = '${DateFormat('yyyy').format(DateTime.now())}';
   bool _dateIsPicked = false;
   bool isExpand = false;
-
-  // Farbe des Blutzuckermesswerts wird bestimmt (grün ist gut, orange
-  // ist etwas erhöht oder etwas zu niedrig, rot ist erheblich erhöht oder
-  // erheblich zu niedrig)
 
   activitySelected(bool sel) {
     if (sel) {
@@ -50,17 +48,24 @@ class _DiaryScreenState extends State<DiaryScreen> {
     _getSettings();
   }
 
+  // colors for the Blood-Sugar-Level value
+  // green => good value
+  // orange => slightly increased value
+  // red => too high value
+
   getColor(String val, range) {
     var value = int.parse(val);
     if (value <= range.end && value >= range.start) {
       return Colors.green;
     } else if (value > range.end && value < 240 ||
-        value < range.start && value > 50) {
+        value < range.start && value > 40) {
       return Colors.orange;
-    } else if (value <= 50 || value >= 240) {
+    } else if (value <= 40 || value >= 240) {
       return Colors.red;
     }
   }
+
+  // method to get current Settings from Shared Preferences
 
   Future _getSettings() async {
     SharedPreferences pref = await SharedPreferences.getInstance();
@@ -288,8 +293,14 @@ class _DiaryScreenState extends State<DiaryScreen> {
                                                         FontAwesomeIcons
                                                             .syringe,
                                                         color: diaryEntrys
-                                                                .entrys[index]
-                                                                .isInjected
+                                                                    .entrys[
+                                                                        index]
+                                                                    .isInjected &&
+                                                                diaryEntrys
+                                                                        .entrys[
+                                                                            index]
+                                                                        .unitsInjected !=
+                                                                    '0'
                                                             ? Colors.white
                                                             : Colors
                                                                 .blueGrey[900],
@@ -363,63 +374,73 @@ class _DiaryScreenState extends State<DiaryScreen> {
                                           },
                                         ),
                                         title: Column(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.start,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: <Widget>[
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: <Widget>[
+                                            (diaryEntrys
+                                                            .entrys[index]
+                                                            .unitsInjected
+                                                            .isEmpty ||
+                                                        diaryEntrys
+                                                                .entrys[index]
+                                                                .unitsInjected ==
+                                                            '0') &&
+                                                    diaryEntrys.entrys[index]
+                                                        .notes.isEmpty
+                                                ? Text(
+                                                    'No notes left.',
+                                                    style: TextStyle(
+                                                      fontSize: 18,
+                                                      fontWeight:
+                                                          FontWeight.w300,
+                                                      color: Colors.white,
+                                                    ),
+                                                  )
+                                                : Text(
+                                                    diaryEntrys
+                                                            .entrys[index]
+                                                            .unitsInjected
+                                                            .isEmpty
+                                                        ? ''
+                                                        : 'Injected Units: ${diaryEntrys.entrys[index].unitsInjected}',
+                                                    style: TextStyle(
+                                                      fontSize: 18,
+                                                      fontWeight:
+                                                          FontWeight.w300,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                            Text(
                                               diaryEntrys
                                                           .entrys[index]
                                                           .unitsInjected
-                                                          .isEmpty &&
+                                                          .isEmpty ||
                                                       diaryEntrys.entrys[index]
-                                                          .notes.isEmpty
-                                                  ? Text(
-                                                      'No notes left.',
-                                                      style: TextStyle(
-                                                        fontSize: 18,
-                                                        fontWeight:
-                                                            FontWeight.w300,
-                                                        color: Colors.white,
-                                                      ),
-                                                    )
-                                                  : Text(
-                                                      diaryEntrys
-                                                              .entrys[index]
-                                                              .unitsInjected
-                                                              .isEmpty
-                                                          ? ''
-                                                          : 'Injected Units: ${diaryEntrys.entrys[index].unitsInjected}',
-                                                      style: TextStyle(
-                                                        fontSize: 18,
-                                                        fontWeight:
-                                                            FontWeight.w300,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                              Text(
-                                                diaryEntrys.entrys[index]
-                                                        .unitsInjected.isEmpty
-                                                    ? ''
-                                                    : 'Insulin: ${diaryEntrys.entrys[index].sort}',
-                                                style: TextStyle(
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.w300,
-                                                  color: Colors.white,
-                                                ),
+                                                              .sort ==
+                                                          null
+                                                  ? ''
+                                                  : 'Insulin: ${diaryEntrys.entrys[index].sort}',
+                                              style: TextStyle(
+                                                fontSize: 18,
+                                                fontWeight: FontWeight.w300,
+                                                color: Colors.white,
                                               ),
-                                              Text(
-                                                diaryEntrys.entrys[index].notes
-                                                        .isEmpty
-                                                    ? ''
-                                                    : 'Notes: ${diaryEntrys.entrys[index].notes}',
-                                                style: TextStyle(
-                                                  fontSize: 18,
-                                                  fontWeight: FontWeight.w300,
-                                                  color: Colors.white,
-                                                ),
+                                            ),
+                                            Text(
+                                              diaryEntrys.entrys[index].notes
+                                                      .isEmpty
+                                                  ? ''
+                                                  : 'Notes: ${diaryEntrys.entrys[index].notes}',
+                                              style: TextStyle(
+                                                fontSize: 18,
+                                                fontWeight: FontWeight.w300,
+                                                color: Colors.white,
                                               ),
-                                            ]),
+                                            ),
+                                          ],
+                                        ),
                                       )
                                     ]),
                               ),
